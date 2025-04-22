@@ -37,46 +37,58 @@ export function SocialLinksGrid({
   discordUrl 
 }: SocialLinksGridProps) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <SocialLink 
-        href={facebookUrl}
-        bgColor="bg-blue-600"
-        hoverColor="bg-blue-700"
-        icon="fab fa-facebook-f"
-        label="Facebook"
-      />
+    <div className="flex flex-col space-y-4">
+      {/* First row of buttons */}
+      <div className="grid grid-cols-2 gap-4">
+        <SocialLink 
+          href={facebookUrl}
+          bgColor="bg-blue-600"
+          hoverColor="bg-blue-700"
+          icon="fab fa-facebook-f"
+          label="Facebook"
+        />
+        
+        <SocialLink 
+          href={youtubeUrl}
+          bgColor="bg-red-600"
+          hoverColor="bg-red-700"
+          icon="fab fa-youtube"
+          label="YouTube"
+        />
+      </div>
       
-      <SocialLink 
-        href={youtubeUrl}
-        bgColor="bg-red-600"
-        hoverColor="bg-red-700"
-        icon="fab fa-youtube"
-        label="YouTube"
-      />
+      {/* Second row of buttons */}
+      <div className="grid grid-cols-2 gap-4">
+        <SocialLink 
+          href={whatsappUrl}
+          bgColor="bg-green-500"
+          hoverColor="bg-green-600"
+          icon="fab fa-whatsapp"
+          label="WhatsApp"
+        />
+        
+        <SocialLink 
+          href={discordUrl}
+          bgColor="bg-indigo-600"
+          hoverColor="bg-indigo-700"
+          icon="fab fa-discord"
+          label="Discord"
+        />
+      </div>
       
-      <SocialLink 
-        href={whatsappUrl}
-        bgColor="bg-green-500"
-        hoverColor="bg-green-600"
-        icon="fab fa-whatsapp"
-        label="WhatsApp"
-      />
-      
-      <SocialLink 
-        href={whatsappChannelUrl}
-        bgColor="bg-green-600"
-        hoverColor="bg-green-700"
-        icon="fab fa-whatsapp"
-        label="WhatsApp Channel"
-      />
-      
-      <SocialLink 
-        href={discordUrl}
-        bgColor="bg-indigo-600"
-        hoverColor="bg-indigo-700"
-        icon="fab fa-discord"
-        label="Discord"
-      />
+      {/* Larger button at the bottom */}
+      <div className="mt-2">
+        <a 
+          href={whatsappChannelUrl}
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-icon flex items-center justify-center p-4 bg-green-600 text-white rounded-lg 
+                    hover:bg-green-700 transition duration-300 text-lg w-full"
+        >
+          <i className="fab fa-whatsapp mr-2 text-xl"></i>
+          <span>انضم لقناة الواتساب</span>
+        </a>
+      </div>
     </div>
   );
 }
