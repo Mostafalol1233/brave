@@ -3,5 +3,5 @@
 # تثبيت الاعتماديات
 npm install
 
-# بناء التطبيق (client فقط)
-npx vite build
+# بناء التطبيق
+npm run build
