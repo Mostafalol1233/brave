@@ -17,13 +17,13 @@ export function ProfileCard() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 z-10 flex flex-col items-center justify-center">
         {/* Content Box with Red Border */}
-        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-8 md:p-12 max-w-3xl w-full">
+        <div className="bg-black/80 border-4 border-red-600 rounded-lg shadow-2xl p-6 md:p-8 max-w-xl w-full">
           {/* Logo Centered */}
-          <div className="mb-12 flex flex-col items-center">
+          <div className="mb-8 flex flex-col items-center">
             <img 
               src={bravezm_logo} 
               alt="BRAVEZM Logo" 
-              className="w-56 h-56 md:w-72 md:h-72 object-contain mb-8 drop-shadow-2xl"
+              className="w-40 h-40 md:w-56 md:h-56 object-contain mb-6 drop-shadow-2xl"
             />
           </div>
           
