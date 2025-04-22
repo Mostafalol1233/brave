@@ -82,10 +82,10 @@ export function SocialLinksGrid({
           href={whatsappChannelUrl}
           target="_blank" 
           rel="noopener noreferrer"
-          className="social-icon flex items-center justify-center p-4 bg-green-600 text-white rounded-lg 
-                    hover:bg-green-700 transition duration-300 text-lg w-full"
+          className="social-icon flex items-center justify-center p-3 bg-green-600 text-white rounded-lg 
+                    hover:bg-green-700 transition duration-300 w-full"
         >
-          <i className="fab fa-whatsapp mr-2 text-xl"></i>
+          <i className="fab fa-whatsapp mr-2"></i>
           <span>انضم لقناة الواتساب</span>
         </a>
       </div>
